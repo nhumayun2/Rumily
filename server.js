@@ -1,4 +1,5 @@
 import dotenv from 'dotenv';
+import 'dotenv/config';
 import 'express-async-errors'; // Imports directly without assignment
 import http from 'http';
 import express from 'express';
