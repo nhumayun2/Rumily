@@ -42,7 +42,7 @@ const register = async (req, res) => {
   // Send Email
   try {
     await sendEmail({
-      to: user.email,
+      email: user.email, // <--- Change 'to' to 'email'
       subject: 'Family Connect - Verification Code',
       html: `
         <h4>Hello ${user.name},</h4>
